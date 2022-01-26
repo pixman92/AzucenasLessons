@@ -1,0 +1,70 @@
+{
+    "sourceFile": "script.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1643162762588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643162776009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,7 @@\n function add(){\r\n     addButton.addEventListener('click', ()=>{\r\n         number.text += 1;\r\n     });\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+init();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643162940857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n }\r\n \r\n function add(){\r\n     addButton.addEventListener('click', ()=>{\r\n+        number = parseInt(number.innerText)\r\n         number.text += 1;\r\n     });\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1643162954195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,6 @@\n         number.text += 1;\r\n     });\r\n }\r\n \r\n-init();\n\\ No newline at end of file\n+init();\r\n+add();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643162984183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,9 @@\n         number.text += 1;\r\n     });\r\n }\r\n \r\n-init();\r\n-add();\n\\ No newline at end of file\n+window.onload=()=>{\r\n+    init();\r\n+    add();\r\n+\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643162998189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,11 @@\n }\r\n \r\n function add(){\r\n     addButton.addEventListener('click', ()=>{\r\n-        number = parseInt(number.innerText)\r\n-        number.text += 1;\r\n+        number = parseInt(number.innerText);\r\n+\r\n+        number += 1;\r\n     });\r\n }\r\n \r\n window.onload=()=>{\r\n"
+                },
+                {
+                    "date": 1643163019126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,13 @@\n }\r\n \r\n function add(){\r\n     addButton.addEventListener('click', ()=>{\r\n-        number = parseInt(number.innerText);\r\n+        var tmp = parseInt(number.innerText);\r\n \r\n-        number += 1;\r\n+        tmp += 1;\r\n+        number.text = tmp;\r\n+\r\n     });\r\n }\r\n \r\n window.onload=()=>{\r\n"
+                },
+                {
+                    "date": 1643163053533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     addButton.addEventListener('click', ()=>{\r\n         var tmp = parseInt(number.innerText);\r\n \r\n         tmp += 1;\r\n+        console.log('tmp', tmp);\r\n         number.text = tmp;\r\n \r\n     });\r\n }\r\n"
+                },
+                {
+                    "date": 1643163065587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n     number = document.getElementById('myNumber');\r\n }\r\n \r\n function add(){\r\n+    var tmp = parseInt(number.innerText);\r\n     addButton.addEventListener('click', ()=>{\r\n-        var tmp = parseInt(number.innerText);\r\n \r\n         tmp += 1;\r\n         console.log('tmp', tmp);\r\n         number.text = tmp;\r\n"
+                },
+                {
+                    "date": 1643163110521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     addButton.addEventListener('click', ()=>{\r\n \r\n         tmp += 1;\r\n         console.log('tmp', tmp);\r\n-        number.text = tmp;\r\n+        number.innerText = tmp;\r\n \r\n     });\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1643163132209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,13 +7,20 @@\n \r\n function add(){\r\n     var tmp = parseInt(number.innerText);\r\n     addButton.addEventListener('click', ()=>{\r\n+        tmp += 1;\r\n+        console.log('tmp', tmp);\r\n+        number.innerText = tmp;\r\n+    });\r\n+}\r\n \r\n+function subtract(){\r\n+    var tmp = parseInt(number.innerText);\r\n+    subtractButton.addEventListener('click', ()=>{\r\n         tmp += 1;\r\n         console.log('tmp', tmp);\r\n         number.innerText = tmp;\r\n-\r\n     });\r\n }\r\n \r\n window.onload=()=>{\r\n"
+                },
+                {
+                    "date": 1643163149352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \r\n function subtract(){\r\n     var tmp = parseInt(number.innerText);\r\n     subtractButton.addEventListener('click', ()=>{\r\n-        tmp += 1;\r\n+        tmp -= 1;\r\n         console.log('tmp', tmp);\r\n         number.innerText = tmp;\r\n     });\r\n }\r\n"
+                },
+                {
+                    "date": 1643163156300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,6 @@\n \r\n window.onload=()=>{\r\n     init();\r\n     add();\r\n-\r\n+    subtract();\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643163188066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,19 +5,19 @@\n     number = document.getElementById('myNumber');\r\n }\r\n \r\n function add(){\r\n-    var tmp = parseInt(number.innerText);\r\n     addButton.addEventListener('click', ()=>{\r\n+        var tmp = parseInt(number.innerText);\r\n         tmp += 1;\r\n         console.log('tmp', tmp);\r\n         number.innerText = tmp;\r\n     });\r\n }\r\n \r\n function subtract(){\r\n-    var tmp = parseInt(number.innerText);\r\n     subtractButton.addEventListener('click', ()=>{\r\n+        var tmp = parseInt(number.innerText);\r\n         tmp -= 1;\r\n         console.log('tmp', tmp);\r\n         number.innerText = tmp;\r\n     });\r\n"
+                }
+            ],
+            "date": 1643162762588,
+            "name": "Commit-0",
+            "content": "var addButton; var subtractButton; var number;\r\nfunction init(){\r\n    addButton = document.getElementById('add');\r\n    subtractButton = document.getElementById('subtract');\r\n    number = document.getElementById('myNumber');\r\n}\r\n\r\nfunction add(){\r\n    addButton.addEventListener('click', ()=>{\r\n        number.text += 1;\r\n    });\r\n}"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1643162385804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643162399292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Azucena Practice</title>\r\n </head>\r\n <body>\r\n+    <div id=\"myNumber\">0</div>\r\n     <button id=\"add\">Add</button>\r\n     <button id=\"subtract\">Subtract</button>\r\n     \r\n </body>\r\n"
+                },
+                {
+                    "date": 1643162816697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Azucena Practice</title>\r\n+    <script src=\"script.js\"></script>\r\n </head>\r\n <body>\r\n     <div id=\"myNumber\">0</div>\r\n     <button id=\"add\">Add</button>\r\n"
+                }
+            ],
+            "date": 1643162385804,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Azucena Practice</title>\r\n</head>\r\n<body>\r\n    <button id=\"add\">Add</button>\r\n    <button id=\"subtract\">Subtract</button>\r\n    \r\n</body>\r\n</html>"
+        }
+    ]
+}
