@@ -2,3 +2,53 @@
 https://www.tutorialspoint.com/html/html_attributes.htm
 
 
+// baisics of HTML
+https://www.tutorialspoint.com/html/html_overview.htm
+
+// basic elements
+https://www.tutorialspoint.com/html/html_elements.htm
+
+// center and line break
+https://www.tutorialspoint.com/html/html_basic_tags.htm
+
+// html formatting that can be used eventually in CSS
+https://www.tutorialspoint.com/html/html_formatting.htm
+
+// html comments
+https://www.tutorialspoint.com/html/html_comments.htm
+
+// blocks and colors
+https://www.tutorialspoint.com/html/html_blocks.htm
+
+// mores styles - examples and such
+https://www.tutorialspoint.com/html/html_backgrounds.htm
+
+// fonts - inline - but eventually -> CSS
+https://www.tutorialspoint.com/html/html_fonts.htm
+
+=================
+// beginner CSS examples
+https://www.tutorialspoint.com/html/html_style_sheet.htm
+
+// beginner JS exmaples
+https://www.tutorialspoint.com/html/html_javascript.htm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
