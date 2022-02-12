@@ -1,0 +1,33 @@
+<html>
+  <head>
+<!--   maybe how to add scripts? -->
+  
+  
+<!--  make Button work      -->
+  <script>
+    function buttonWork(){
+      document.getElementById('makeFullName').addEventListener('click', ()=>{
+        var first = document.getElementById('firstName').text;
+        var last = document.getElementById('lastName').text;
+        
+        console.log('my name is '+first+' '+last);
+      });
+    
+    
+  </script>
+  
+  
+  </head>
+  
+  <body>
+<!--  2 forms and a button    -->
+    
+    <textarea id="firstName"></textarea>
+    <textarea id="lastName"></textarea>
+    
+    <button id="makeFullName>Make</button>
+    
+      
+  </body>
+  
+</html>
